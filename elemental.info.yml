@@ -1,0 +1,5 @@
+name: Elemental
+type: module
+description: Flexible entity system for better content creation and management.
+core: 8.x
+package: Alchemist

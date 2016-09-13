@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains elemental.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function elemental_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the elemental module.
+    case 'help.page.elemental':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Flexible entity system for better content creation and management.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
